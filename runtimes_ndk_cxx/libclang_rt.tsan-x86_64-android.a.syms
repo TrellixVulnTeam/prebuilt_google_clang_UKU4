@@ -9,7 +9,6 @@
   __interceptor___cxa_atexit;
   __interceptor___libc_memalign;
   __interceptor___sigsetjmp;
-  __interceptor___strndup;
   __interceptor___strxfrm_l;
   __interceptor___wait4;
   __interceptor___wcsxfrm_l;
@@ -1025,7 +1024,6 @@
   __sanitizer_weak_hook_strncmp;
   __sanitizer_weak_hook_strstr;
   __sigsetjmp;
-  __strndup;
   __strxfrm_l;
   __tsan_acquire;
   __tsan_atomic*;

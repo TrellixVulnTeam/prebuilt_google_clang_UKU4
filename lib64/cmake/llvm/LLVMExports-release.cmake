@@ -914,6 +914,16 @@ set_target_properties(LLVMWindowsManifest PROPERTIES
 list(APPEND _IMPORT_CHECK_TARGETS LLVMWindowsManifest )
 list(APPEND _IMPORT_CHECK_FILES_FOR_LLVMWindowsManifest "${_IMPORT_PREFIX}/lib64/libLLVMWindowsManifest.a" )
 
+# Import target "omptarget" for configuration "Release"
+set_property(TARGET omptarget APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+set_target_properties(omptarget PROPERTIES
+  IMPORTED_LOCATION_RELEASE "${_IMPORT_PREFIX}/lib64/libomptarget.so.12git"
+  IMPORTED_SONAME_RELEASE "libomptarget.so.12git"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS omptarget )
+list(APPEND _IMPORT_CHECK_FILES_FOR_omptarget "${_IMPORT_PREFIX}/lib64/libomptarget.so.12git" )
+
 # Import target "LTO" for configuration "Release"
 set_property(TARGET LTO APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(LTO PROPERTIES

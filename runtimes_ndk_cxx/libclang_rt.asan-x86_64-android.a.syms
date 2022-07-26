@@ -9,7 +9,6 @@
   __interceptor___cxa_rethrow_primary_exception;
   __interceptor___cxa_throw;
   __interceptor___libc_memalign;
-  __interceptor___strndup;
   __interceptor___strxfrm_l;
   __interceptor___wait4;
   __interceptor___wcsxfrm_l;
@@ -963,7 +962,6 @@
   __sanitizer_weak_hook_strncasecmp;
   __sanitizer_weak_hook_strncmp;
   __sanitizer_weak_hook_strstr;
-  __strndup;
   __strxfrm_l;
   __ubsan_*;
   __wait4;
