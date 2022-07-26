@@ -5,10 +5,10 @@
 # It is necessary for linking the library.
 
 # The name that we can dlopen(3).
-dlname='libctf-nobfd.so.0'
+dlname=''
 
 # Names of this library.
-library_names='libctf-nobfd.so.0.0.0 libctf-nobfd.so.0 libctf-nobfd.so'
+library_names=''
 
 # The name of the static archive.
 old_library='libctf-nobfd.a'
@@ -17,7 +17,7 @@ old_library='libctf-nobfd.a'
 inherited_linker_flags=''
 
 # Libraries that this one depends upon.
-dependency_libs=' -L/home/khusika/Documents/android/toolchain/clang/tc-build/build/binutils/x86_64-linux-gnu/libctf/../libiberty/pic -liberty -lz -ldl'
+dependency_libs=' -L/home/khusika/android/clang/build/build/binutils/x86_64-linux-gnu/libctf/../libiberty -liberty -lz -ldl'
 
 # Names of additional weak libraries provided by this library
 weak_library_names=''
@@ -38,4 +38,4 @@ dlopen=''
 dlpreopen=''
 
 # Directory that this library needs to be installed in:
-libdir='/home/khusika/Documents/android/toolchain/clang/khusika/lib'
+libdir='/home/khusika/android/clang/khusika/lib'
